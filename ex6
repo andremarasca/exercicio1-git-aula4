@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+cat data/2006-sample.csv |
+ tail -n +2 |
+grep ,DL,| 
+ cut -d "," -f15 |
+grep '[0-9]'|
+ grep - -v|
+ sort -n |
+ paste -sd+|bc
