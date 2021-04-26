@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+tail -n +2 data/2006-sample.csv |
+sort --field-separator=',' --key=16 -n |
+tail -1
