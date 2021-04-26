@@ -2,4 +2,4 @@
 
 < data/2006-sample.csv head -2 |
 tail -n +2| 
-sort -k14
+sort -k14 -n
