@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+< data/2006-sample.csv head -2 |
+tail -n +2| 
+sort -k14
