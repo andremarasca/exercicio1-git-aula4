@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+UNIQUE_CARRIER="${1:-NONE}"
+tail -n +2 data/2006-sample.csv |
+grep ",${UNIQUE_CARRIER}," |
+cut -d ',' -f15 |
+grep -v "-" |
+wc -l
