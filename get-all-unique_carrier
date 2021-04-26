@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+tail -n +2 data/2006-sample.csv | cut -d ',' -f9 | sort | uniq
