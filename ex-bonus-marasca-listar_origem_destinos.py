@@ -1,5 +1,3 @@
-#!/home/marasca/anaconda3/bin/python3
-
 import pandas as pd
 
 df_sample = pd.read_csv("data/2006-sample.csv", encoding="latin-1", dtype=str)
